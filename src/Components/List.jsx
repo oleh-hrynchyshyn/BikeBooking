@@ -51,7 +51,7 @@ const List = (props) => {
   };
 
   const removeElement = (id) => {
-    const newdata = data.filter((elem) => elem.id != id);
+    const newdata = data.filter((elem) => elem.id !== id);
 
     localForage.removeItem("data").catch((err) => {
       console.log(err);
@@ -65,7 +65,7 @@ const List = (props) => {
   const changeClass = (key, target, id) => {
     target.className = key;
     const newData = data.map((e) => {
-      if (e.id == id) {
+      if (e.id === id) {
         console.log(key);
         e.status = key;
       }

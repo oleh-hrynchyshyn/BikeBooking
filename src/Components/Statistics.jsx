@@ -1,7 +1,7 @@
 import "../css/Statistics.css";
 
 const Statistics = (props) => {
-  const { data, setData } = props;
+  const { data } = props;
 
   const availableBikesCount = data.filter(
     (el) => el.status === "list__available"

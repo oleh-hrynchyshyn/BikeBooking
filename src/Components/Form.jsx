@@ -53,6 +53,8 @@ const Form = (props) => {
         access = false;
         alert("should have a unique id");
       }
+
+      return null;
     });
     if (access) {
       const newData = [

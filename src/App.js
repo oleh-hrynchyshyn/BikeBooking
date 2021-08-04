@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "./App.css";
 
 import Header from "./Components/Header";
@@ -11,12 +12,12 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [data, setData] = useState([]);
-    
-  useEffect(() => { 
+
+  useEffect(() => {
     localForage
       .getItem("data")
       .then((value) => {
-        if (value.length != 0) setData(value);
+        if (value.length !== 0) setData(value);
         console.log(data);
       })
       .catch((err) => {
@@ -31,7 +32,7 @@ function App() {
         <List data={data} setData={setData} />
         <div className="main__form">
           <Form data={data} setData={setData} />
-          <Statistics data={data} setData={setData} />
+          <Statistics data={data} />
         </div>
       </main>
       <Footer />
