@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Saira;
+  src: url(/src/fonts/Saira-Light.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Saira-Bold;
+  src: url(/src/fonts/Saira-Bold.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+.list__available,
+.list__busy,
+.list__unavailable {
+  font-family: Saira;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #e8e8e8;
+
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.list__available {
+  border: 2px solid #6fcf97;
+}
+.list__busy {
+  border: 2px solid #f2994a;
+}
+.list__unavailable {
+  border: 2px solid #eb5757;
+  opacity: 0.5;
+}
+.main__list {
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  grid-row-gap: 12px;
+  grid-template-rows: auto;
+  overflow: auto;
+}
+
+.list__top,
+.list__id,
+.list__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 18px 1px 18px;
+}
+.list__top {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.list__bottom {
+  padding-bottom: 12px;
+}
+.list__nameBold {
+  font-family: Saira-Bold;
+}
+.list__id {
+  font-size: 10px;
+  padding-bottom: 12px;
+}
+.list__price {
+  font-size: 24px;
+  padding-bottom: 0px;
+}
+.list__select {
+  background: #e8e8e8;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.list__close {
+  cursor: pointer;
+}
+
+.list__close:hover {
+  color: grey;
+}

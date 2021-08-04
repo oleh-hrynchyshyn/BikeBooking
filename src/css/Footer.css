@@ -1,0 +1,18 @@
+.footer {
+  padding: 5px 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: right;
+  font-size: 20px;
+  font-family: Saira;
+  background-color: #696969;
+}
+
+.footer__dev {
+  color: #cbcaca;
+}
+
+.footer__name {
+  color: #e8e8e8;
+}

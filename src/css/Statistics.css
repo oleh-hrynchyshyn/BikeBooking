@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Saira;
+  src: url(/src/fonts/Saira-Light.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Saira-Bold;
+  src: url(/src/fonts/Saira-Bold.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+.statistics {
+  margin-top: 20px;
+  padding-top: 10px;
+  font-family: Saira;
+  border-top: 1px solid #c4c4c4;
+}
+
+.statistics__header {
+  font-size: 22px;
+}
+
+.statistics__value {
+  font-family: Saira-Bold;
+}

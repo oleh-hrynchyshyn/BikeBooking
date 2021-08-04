@@ -1,0 +1,12 @@
+.main {
+  height: calc(100% - 84px);
+  display: grid;
+  grid-template-columns: 53% 47%;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
