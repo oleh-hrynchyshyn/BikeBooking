@@ -11,8 +11,8 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [data, setData] = useState([]);
-
-  useEffect(() => {
+    
+  useEffect(() => { 
     localForage
       .getItem("data")
       .then((value) => {
